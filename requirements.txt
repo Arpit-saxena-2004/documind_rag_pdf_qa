@@ -1,0 +1,30 @@
+# Core Web Framework
+fastapi==0.124.4
+uvicorn==0.38.0
+python-dotenv==1.2.1
+python-multipart==0.0.21
+
+# LangChain Core
+langchain==1.2.0
+langchain-core==1.2.7
+langchain-community==0.4.1
+langchain-text-splitters==1.1.0
+
+# LLM Provider
+langchain-google-genai==2.1.12
+
+# Embeddings and Vector Store
+sentence-transformers==5.2.0
+chromadb==1.3.7
+
+# PDF Processing
+pypdf==6.6.0
+
+# Monitoring and Tracing
+langsmith==0.4.45
+
+# Required Dependencies (auto-installed but pinned for consistency)
+pydantic==2.11.7
+torch==2.9.1
+transformers==4.57.3
+numpy==2.3.5

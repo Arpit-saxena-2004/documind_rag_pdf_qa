@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DocuMind | PDF Q&A</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="main-layout">
+    
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <div class="logo">
+          <span class="icon">✨</span>
+          <h1>DocuMind <span></span></h1>
+        </div>
+      </div>
+
+      <section class="sidebar-upload">
+        <h4>Document Setup</h4>
+        <div class="file-input-wrapper-vertical">
+          <label for="pdfFile" class="custom-file-upload">
+            Choose PDF
+          </label>
+          <input type="file" id="pdfFile" accept="application/pdf" />
+          <span id="fileNameDisplay">No file selected</span>
+        </div>
+
+        <button type="button" class="btn-primary full-width" onclick="uploadPDF(event); return false;">
+          Analyze Document
+        </button>
+      </section>
+
+      <hr class="sidebar-divider">
+
+      <div class="sidebar-content">
+        <h4>Support</h4>
+        <p>In case of any queries or technical issues, contact:</p>
+        
+        <div class="contact-card">
+          <a href="mailto:arpitsaxena1009@gmail.com" class="contact-link">
+            <span class="contact-icon">✉️</span>
+            arpitsaxena1009@gmail.com
+          </a>
+          <a href="https://www.linkedin.com/in/arpit-saxena1009" target="_blank" class="contact-link">
+            <span class="contact-icon">🔗</span>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <div class="app-container">
+
+      <div id="uploadStatus" class="status-bar"></div>
+
+      <section class="chat-window">
+        <div class="chat-container" id="chatContainer">
+          <div class="message bot">
+            Hello! Upload a PDF via the sidebar and ask me anything about it.
+          </div>
+        </div>
+
+        <div class="chat-input-area">
+          <div class="input-wrapper">
+            <input type="text" id="questionInput" placeholder="Ask a question about the document..."
+              onkeydown="if(event.key==='Enter'){askQuestion()}" />
+            <button type="button" class="send-btn" onclick="askQuestion()">➤</button>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
