@@ -73,7 +73,7 @@ PDF_Q_AND_A_CHATBOT/
 ### Step 1: Clone the Repository
 
 ```bash
-git clone https://github.com/Arpit-saxena-2004/documind-a_pdf_question_answer_chatbot-.git
+git clone https://github.com/Arpit-saxena-2004/documind_rag_pdf_qa.git
 cd documind-a_pdf_question_answer_chatbot-
 ```
 
