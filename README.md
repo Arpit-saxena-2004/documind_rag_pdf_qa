@@ -74,7 +74,7 @@ PDF_Q_AND_A_CHATBOT/
 
 ```bash
 git clone https://github.com/Arpit-saxena-2004/documind_rag_pdf_qa.git
-cd documind-a_pdf_question_answer_chatbot-
+cd documind_rag_pdf_qa
 ```
 
 ### Step 2: Install Dependencies
